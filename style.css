@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap');
+
+.ka {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --main-color: #2f2721;
+    --primary-color: #d3ad7f;
+    --black: #13131a;
+    --border: .1rem solid rgba(255, 255, 255, .3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    transition: .2s linear;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+}
+
+section{
+    padding: 2rem 7%;
+}
+
+.heading{
+    text-align: center;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    border: 0.1rem solid var(--primary-color);
+    color: white;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.btn:hover{
+    background: #fff6eb;
+    color: var(--primary-color);
+}
+
+
+
+/* ini bagian header */
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--main-color);
+    padding: 2rem 10%;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+.header .logo-coffe {
+    margin-right: auto;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: white;
+    font-weight: bolder;
+    align-items: center;
+}
+
+.headder .navbar {
+    position: relative;
+}
+
+.header .navbar #close-navbar {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 4rem;
+    cursor: pointer;
+    color: black;
+    display: none;
+}
+
+.navbar a{
+    margin-right: 2rem;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    color: white;
+    font-weight: 600;
+}
+
+.header .navbar a:hover{
+    color: var(--primary-color);
+}
+
+.header .icons div{
+    margin-left: 1.5rem;
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+}
+
+.header .icon div:hover{
+    color: var(--primary-color);
+}
+
+.header #menu-btn{
+    display: none;
+}
+
+/*home*/
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(./img/img-9.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content h3{
+    font-size: 4rem;
+    text-transform: capitalize;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.home .content{
+    max-width: 60rem;
+}
+
+/* tentang kami/about*/
+
+.about{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about .row .image {
+    flex: 1 1 55rem;
+}
+
+.about .row .image img{
+    width: 80%;
+}
+
+.about .row .content{
+    flex: 1 1 45rem;
+    padding: 8rem;
+}
+
+.about .row .content h3{
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color: #444;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.market .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.market .box-container .box{
+    padding: 5rem;
+    text-align: center;
+    background-color: var(--main-color);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+.market .box-container .box img{
+    height: 20rem;
+}
+
+.market .box-container .box h1{
+    color: white;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+}
+
+
+.market .box-container .box .harga{
+    color: white;
+    font-size: 2.5rem;
+    padding: .5rem 0;
+}
+
+.market .box-container .box:hover{
+    background-color: var(--primary-color);
+}
+
+.market .box-container .box:hover > *{
+    color: var(--black);
+}
+
+/*kontak kami*/
+
+.contact .row{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: grid;
+    -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: warp;
+    gap: 2rem;
+
+}
+
+
+.contact .row form{
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 40rem;
+            flex: 1 1 40rem;
+    border: 0.1rem solid var(--main-color);
+    padding: 2rem;
+}
+
+.contact .row form h3{
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--main-color);
+    padding-bottom: 1rem;
+    text-transform: uppercase ;
+}
+
+.contact .row form .input-box{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: var(--main-color);
+    border: var(--border);
+}
+
+.contact .row form .input-box span{
+    color: var(--primary-color);
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contact .row form .input-box input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: var(--primary-color);
+    text-transform: none;
+    background: none;
+}
+.denah{
+   text-align: center;
+}
+.denah iframe{
+    height: 400px;
+    width: 80%;
+}
+
+
+
+
+
+
